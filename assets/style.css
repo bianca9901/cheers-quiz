@@ -1,0 +1,141 @@
+/*global settings*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: bebas neue;
+    background-color: rgba(255, 255, 255, 0.846);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+/* Heading*/
+h1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(174, 131, 214);
+    text-align: center;
+    font-size: 100px;
+    margin: 50px;
+    letter-spacing: 8px;
+}
+
+/*Restart*/
+#restart {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 55, 55);
+    margin-top: 20px;
+}
+
+
+a {
+    font-size: 40px;
+    color: rgb(174, 131, 214);
+    text-decoration: none;
+}
+
+/* Quiz */
+#question {
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 40px 0;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+    margin: 20px 0;
+}
+
+.btn {
+    font-family: bebas neue;
+    letter-spacing: 4px;
+    background-color: rgb(174, 131, 214);
+    padding: 20px 40px;
+    outline: none;
+    border-radius: 3px;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+.start-btn, .next-btn {
+    padding: 30px 50px;
+}
+
+.btn:hover  {
+    background-color: beige;
+}
+
+.btn.correct {
+    color:  green;
+}
+.btn.wrong {
+    background-color: red;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/*footer*/
+.socialmedia {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 15rem;
+}
+
+.socialmedia,
+li a:hover {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(58, 55, 55);
+    color: white;
+    padding: 1em;
+}
