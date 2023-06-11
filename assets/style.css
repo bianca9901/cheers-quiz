@@ -37,17 +37,6 @@ h1 {
     letter-spacing: 8px;
 }
 
-/*Restart*/
-#restart {
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(58, 55, 55);
-    margin-top: 20px;
-}
-
-
 a {
     font-size: 40px;
     color: rgb(174, 131, 214);
@@ -65,20 +54,20 @@ a {
 .container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 1000px;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
     border-radius: 5px;
     margin: 50px;
 }
 
-.btn-grid {
+.button-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 100px;
     margin: 20px 0;
 }
 
-.btn {
+.button {
     font-family: bebas neue;
     letter-spacing: 4px;
     background-color: rgb(174, 131, 214);
@@ -89,18 +78,18 @@ a {
     font-size: 20px;
 }
 
-.start-btn, .next-btn {
+.start-button, .next-button {
     padding: 30px 50px;
 }
 
-.btn:hover  {
+.button:hover  {
     background-color: beige;
 }
 
-.btn.correct {
+.button.correct {
     color:  green;
 }
-.btn.wrong {
+.button.wrong {
     background-color: red;
 }
 
@@ -138,4 +127,8 @@ footer {
     background-color: rgb(58, 55, 55);
     color: white;
     padding: 1em;
+}
+
+.hide {
+    display:none;
 }
