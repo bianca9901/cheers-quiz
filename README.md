@@ -15,28 +15,27 @@ The site can be accessed by this [link](https://bianca9901.github.io/spanish-qui
 
 ### **First-Time Visitor Goals:**
 
- **As a first-time visitor my goal is to find out what this website is about so that I can learn more.**
+* As a first-time visitor my goal is to find out what this website is about so that I can learn more.
 
-**As a first-time visitor my goal is to know what my current score is so that I know my level. Therefore I take this quiz.**
+* As a first-time visitor my goal is to know what my current score is so that I know my level. Therefore I take this quiz.
 
 
 ### **Returning Visitor Goals:**
 
-**As a returning visitor my goal is to repeat the phrases so that I can see if I can get a better score**
+* As a returning visitor my goal is to repeat the phrases so that I can see if I can get a better score
 
-**As a returning visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.**
+* As a returning visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.
 
-**As a returning visitor my goal is to contact the quiz authors so that I can ask further questions or suggest an improvement.**
+* As a returning visitor my goal is to contact the quiz authors so that I can ask further questions or suggest an improvement.
 
 ### **Frequent Visitor Goals:**
 
-**As a frequent visitor my goal is to get a full score so that I know that I memorized all the phrases.**
+* As a frequent visitor my goal is to get a full score so that I know that I memorized all the phrases.
 
 
 ## Existing features
 
-### Home page general
-#### The landing page displays
+### Home page consists of
 * The Logo,
 * A description of the quiz.
 * The Quiz
@@ -58,7 +57,7 @@ Bild
 
 3. When the user has chosen their answer a color of green will be displayed if it was guessed correctly, and a colour of red will be displayed if guessed wrong. 
 
-4. Then the user has the option to click the button ‘’next’’. After they had clicked next, question number 2 and the following 4 alternatives will be displayed. This time the user will have two options, to select the ‘’next’’ button or and ‘’restart’’ button. 
+4. The user then has the option to click the button ‘’next’’. If clicked, question number 2 and the following 4 alternatives will be displayed. This time the user will have two options, to select the ‘’next’’ button or the‘’restart’’ button. 
 
 5. If the visitor finishes all questions, their score will be displayed. The visitor gets 1 point for every correct answer with a maximum score of 10.
 
@@ -70,12 +69,11 @@ Bild
 #### The Footer
 Has social media icons that when pressed will open up in a new tab. It also has a general email for the quiz authors.![Footer](documentation/the-footer.png)
 
-
 ---
 
 ## Features Left to Implement
 
-* Make the answers shuffle if the user wants to restart the game
+* Make the answers get shuffled if the user wants to restart the game
 
 * A favicon
 
@@ -90,7 +88,7 @@ was used for structuring the website.
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 was used to style the website.
 [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) was used to get the layout and to get the site responsive on different devices.
-[Grid] (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) was used to get the layout and to get the site responsive on different devices.
+[Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) was used to get the layout and to get the site responsive on different devices.
 * [Balsamiq](https://balsamiq.com/)
 was used to make the wireframe.
 * [Github](https://github.com/)
@@ -105,7 +103,9 @@ was used to write the code.
 
 ## Design
 
-* The website has a simplistic modern feel with the main colors Black, White, Pink, Purple and Grey. 
+### Colors
+
+Black, White, Pink, Purple and Grey. 
 
 ![Color Black](documentation/color-black.png)
 ![Color White](documentation/color-white.png)
@@ -117,7 +117,6 @@ was used to write the code.
 ### Typography 
 
 I used [Google Fonts](https://fonts.google.com/) for all text. The name of the font is Bebas Neue Regular 400.
-#### Bebas Neue
 ![Bebas Neue](documentation/google-fonts.png)
 
 
@@ -163,27 +162,6 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 
 ### Manual testing
 
-| feature | action | expected result | tested | passed | comments |
-| --- | --- | --- | --- | --- | --- |
-| Navbar | | | | | |
-| Home | Click on the "Home" link | The user is redirected to the main page | Yes | Yes | - |
-| Schedule | Click on the "Schedule" link | The user is redirected to the schedule section | Yes | Yes | - |
-| Membership | Click on the "Membership" link | The user is redirected to the membership section | Yes | Yes | - |
-| Contact | Click on the "Contact" link | The user is redirected to the contact page | Yes | Yes | - |
-| Footer | | | | | |
-| Instagram icon in the footer | Click on the Instagram icon | The user is redirected to the Instagram page | Yes | Yes | - |
-| Facebook icon in the footer | Click on the Facebook icon | The user is redirected to the Facebook page | Yes | Yes | - |
-| YouTube icon in the footer | Click on the YouTube icon | The user is redirected to the YouTube page | Yes | Yes | - |
-| Contact us page | | | | | |
-| First name input | Enter the first name | The first name is entered | Yes | Yes | If the user doesn't enter the first name, the error message appears |
-| Last name input | Enter the last name | The last name is entered | Yes | Yes | If the user doesn't enter the last name, the error message appears |
-| Email input | Enter the email | The email is entered | Yes | Yes | If the user doesn't enter the email, the error message appears. If the user enters not valid email, the error message appears |
-| "Send" button in contact form | Click on the "Send" button | The user is redirected to the Response page | Yes | Yes | - |
-| Response page | | | | | |
-| Response message | The user will be automatically redirected to the home page after 10 seconds | The user is redirected to the home page | Yes | Yes | - |
-
----
-
 ## Bugs
 
 ### Solved bugs
@@ -197,14 +175,6 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 --- 
 
 ## Deployment
-
-I cloned my ongoing codeanywhere repository that was deployed on GitHub. Meaning I copied the GitHub URL link and used these commands,
-```
-cd ~/Desktop     -  redirect you to your desktop
-cd ciprojects     - redirect you to your folder with the projects
-git clone https://github.com/bianca9901/zen-zone.git     - clone your repository
-open -a "Visual Studio Code" zen-zone     - open your project in vs code
-```
 
 The site was deployed to GitHub pages.
 * The steps to deploy are as follows:
@@ -226,8 +196,6 @@ How to make a local clone of this project.
 
 ## Future improvements
 
-* I did not write my commit messengers correctly at the beggining of the project. However, I fixed my errors when I realized my wrongs. In the future, I will improve the overall quality.
-
 ---
 
 ## Credits
@@ -236,10 +204,6 @@ How to make a local clone of this project.
 The icons in the footer and logo were taken from [Font Awesome](https://fontawesome.com/)
 
 To make the code for the box-shadow I used [Css Matic](https://www.cssmatic.com/box-shadow)
-
-I used information and code about Flexbox from [W3schools](https://www.w3schools.com/css/css3_flexbox.asp)
-
-Grid?
 
 I used [Digital Colour Meter](https://support.apple.com/sv-se/guide/digital-color-meter/welcome/mac) for the screenshot of the colors in my website that I demonstrated in this README.md 
 
