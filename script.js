@@ -1,8 +1,7 @@
 const startButton = document.getElementById('start-button')
 const nextButton = document.getElementById('next-button')
-const quizBoxElement = document.getElementById ('quiz-box')
+const quizBoxElement = document.getElementById('quiz-box')
 const questionElement = document.getElementById('question')
-const scoreElement = document.getElementById('score')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
 
@@ -12,14 +11,15 @@ let score = 0
 console.log(nextButton)
 
 startButton.addEventListener('click', startQuiz)
-nextButton.addEventListener('click',() => {
+nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
+
 function startQuiz() {
     // start the quiz, hide the start button
-  // show the question box
-  //  show the next button
+    // show the question box
+    //  show the next button
     startButton.classList.add('hide')
     nextButton.classList.remove('hide')
     rearrangeQuestions = questions.sort(() => Math.random - .5)
@@ -30,21 +30,23 @@ function startQuiz() {
 }
 
 function setNextQuestion() {
-        resetState()
-        nextButton.classList.remove('hide')
-        console.log(rearrangeQuestions.length)
-        console.log(currentQuestionIndex + 1)
-        numberOfQuestion = currentQuestionIndex + 1
-        console.log(`numberOfQuestion ${numberOfQuestion}`)
-        if (rearrangeQuestions.length >= numberOfQuestion) {
-          showQuestion(rearrangeQuestions [currentQuestionIndex])
-        } else {
-          //  stop the quiz
-          nextButton.classList.add('hide')
-          
-        }
+    resetState()
+    nextButton.classList.remove('hide')
+    console.log(rearrangeQuestions.length)
+    console.log(currentQuestionIndex + 1)
+    numberOfQuestion = currentQuestionIndex + 1
+    console.log(`numberOfQuestion ${numberOfQuestion}`)
+    if (rearrangeQuestions.length >= numberOfQuestion) {
+        showQuestion(rearrangeQuestions[currentQuestionIndex])
+    } else {
+        //  stop the quiz
+        nextButton.classList.add('hide')
+        questionElement.innerText = 'you can say cheers in `${score}` out of 10 languages'
     }
-    
+}
+
+
+
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answer.forEach(answer => {
@@ -74,7 +76,7 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if (rearrangeQuestions.lenght > currentQuestionIndex +1) {
+    if (rearrangeQuestions.lenght > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
         startButton.innerText = 'Restart'
@@ -83,50 +85,87 @@ function selectAnswer(e) {
 }
 
 function setStatusClass(element, correct) {
-clearStatusClass(element)
-if (correct) {
-    element.classList.add('correct')
-} else {
-    element.classList.add('wrong')
-}
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+        //score++
+    } else {
+        element.classList.add('wrong')
+    }
 }
 
 function clearStatusClass(element) {
-        element.classList.remove('correct')
-        element.classList.remove('wrong')
-    }
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
 
 
-const questions = [
-    {
+const questions = [{
         question: 'Cheers in Spanish',
-        answer: [
-            { text: 'Skål', correct: false},
-            { text: 'Cheers', correct: false },
-            { text: 'Salud', correct: true},
-            { text: 'Prost', correct: false },
+        answer: [{
+                text: 'Skål',
+                correct: false
+            },
+            {
+                text: 'Cheers',
+                correct: false
+            },
+            {
+                text: 'Salud',
+                correct: true
+            },
+            {
+                text: 'Prost',
+                correct: false
+            },
         ]
     },
 
-{
-    question: 'Cheers in French',
-        answer: [
-            { text: 'Sláinte', correct: false },
-            { text: 'Şerefe', correct: false },
-            { text: 'Kanpai', correct: false },
-            { text: 'Santé', correct: true },
+    {
+        question: 'Cheers in French',
+        answer: [{
+                text: 'Sláinte',
+                correct: false
+            },
+            {
+                text: 'Şerefe',
+                correct: false
+            },
+            {
+                text: 'Kanpai',
+                correct: false
+            },
+            {
+                text: 'Santé',
+                correct: true
+            },
         ]
-},
-{
-    question: 'Cheers in Afrikaans',
-        answer: [
-            { text: 'Gesondheid', correct: true },
-            { text: 'Yamas', correct: false },
-            { text: 'Gānbēi', correct: false },
-            { text: 'Prost', correct: false }
+    },
+    {
+        question: 'Cheers in Afrikaans',
+        answer: [{
+                text: 'Gesondheid',
+                correct: true
+            },
+            {
+                text: 'Yamas',
+                correct: false
+            },
+            {
+                text: 'Gānbēi',
+                correct: false
+            },
+            {
+                text: 'Prost',
+                correct: false
+            }
         ]
-}
+    }
 ]
+
+
+
+
 
 /*Add after fix quiz bug
 question: 'Cheers in German',
@@ -178,3 +217,5 @@ question: Cheers in Albanian,
             { text: 'Gom bui', correct: false },
             { text: 'Prost', correct: false }
 */
+
+// You can say Cheers in 0/10 languages
