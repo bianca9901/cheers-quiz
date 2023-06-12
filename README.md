@@ -17,45 +17,53 @@ The site can be accessed by this [link](https://bianca9901.github.io/spanish-qui
 
  **As a first-time visitor my goal is to find out what this website is about so that I can learn more.**
 
-**As a first time visitor my goal is to know what my current score is so that I know my level. Therefore I take this quiz.**
+**As a first-time visitor my goal is to know what my current score is so that I know my level. Therefore I take this quiz.**
 
 
 ### **Returning Visitor Goals:**
 
 **As a returning visitor my goal is to repeat the phrases so that I can see if I can get a better score**
 
-**As a returning visitor my goal is to find the Cheers-Quiz’ social media so that I can follow and interact with them.**
+**As a returning visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.**
 
 **As a returning visitor my goal is to contact the quiz authors so that I can ask further questions or suggest an improvement.**
 
 ### **Frequent Visitor Goals:**
 
-**As a frequent visitor my goal is to get a full score so that I know that I memorised all the phrases.**
+**As a frequent visitor my goal is to get a full score so that I know that I memorized all the phrases.**
 
 
 ## Existing features
 
 ### Home page general
 #### The landing page displays
-The logo, 
-A description about the quiz.
-The quiz
-The footer
+* The Logo,
+* A description of the quiz.
+* The Quiz
+* The Footer
 
 ![Home page](documentation/landing-page.png)
 
-### The logo
+### The Logo
 Bild
 
-### A description about the Quiz
+### A description of the Quiz
 Bild
 
 
 #### The Quiz
-The quiz section displays a button with the text ‘’start’’ that when pressed will display the first question.
-When the first question is displayed, the start question gets removed and the user will be presented with question 1 and 4 alternative answers where only on is correct. After the user has chosen their answer a colour of green will be displayed if tit was guessed correctly, and a colour of red will be displayed if guessed wrong. They will then have the option to click the button ‘’next’’. After they had clicked next, question number 2 and following 4 alternative will be displayed. This time the user will have two options, to select ‘’next’’ button or ‘’restart’’ button. 
-If the visitor Finnish all questions their score will be displayed. The visitor gets 1 point for every correct answer with the maximum score of 10.
-*
+1. The quiz section displays a button with the text ‘’start’’ that when pressed will display the first question.
+
+2. When the first question is displayed, the start question gets removed and the user will be presented with question 1 with the following 4 alternative answers where only one is correct. 
+
+3. When the user has chosen their answer a color of green will be displayed if it was guessed correctly, and a colour of red will be displayed if guessed wrong. 
+
+4. Then the user has the option to click the button ‘’next’’. After they had clicked next, question number 2 and the following 4 alternatives will be displayed. This time the user will have two options, to select the ‘’next’’ button or and ‘’restart’’ button. 
+
+5. If the visitor finishes all questions, their score will be displayed. The visitor gets 1 point for every correct answer with a maximum score of 10.
+
+6. The score will display the text "You can say cheers in x/10 languages!"
+
 ![Class selection section](documentation/class-selection-section.png)
 
 
@@ -66,6 +74,8 @@ Has social media icons that when pressed will open up in a new tab. It also has 
 ---
 
 ## Features Left to Implement
+
+* Make the answers shuffle if the user wants to restart the game
 
 * A favicon
 
@@ -95,25 +105,26 @@ was used to write the code.
 
 ## Design
 
-* The website has a simplistic modern feel with the main colors Purple, White, Pink and Grey. 
+* The website has a simplistic modern feel with the main colors Black, White, Pink, Purple and Grey. 
 
 ![Color Black](documentation/color-black.png)
 ![Color White](documentation/color-white.png)
-![Color Green](documentation/color-green.png)
+![Color Pink](documentation/color-pink.png)
+![Color Purple](documentation/color-purple.png)
+![Color grey](documentation/color-grey.png)
 
 
 ### Typography 
 
-I used [Google Fonts](https://fonts.google.com/)  for all text. For the headlines, I used Bebas Neue Regular 400. For paragraphs, I used Raleway Light 300.
+I used [Google Fonts](https://fonts.google.com/) for all text. The name of the font is Bebas Neue Regular 400.
 #### Bebas Neue
-![Bebas Neue](documentation/bebas-neue.png)
-#### Raleway
-![Raleway](documentation/raleway.png)
+![Bebas Neue](documentation/google-fonts.png)
+
 
 ### Wireframes
 
 #### I used [Balsamiq Wireframes](https://balsamiq.com/wireframes/) to make a mockup sketch of the layout before starting to code.
-![Wireframe](documentation/balsamiq.png)
+![Wireframe](documentation/wireframe.png)
 
 ---
 
@@ -121,7 +132,7 @@ I used [Google Fonts](https://fonts.google.com/)  for all text. For the headline
 
 ### Validator testing
 
-#### No errors were returned when passing through the official [W3C validator](https://validator.w3.org/) for the html. No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator.html.en) validator for css.
+#### No errors were returned when passing through the official [W3C validator](https://validator.w3.org/) for the html. No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator.html.en) validator for CSS.
 
 #### HTML
 * Homepage 
@@ -187,7 +198,7 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 
 ## Deployment
 
-I cloned my ongoing codeanywhere repository that was deployed on GitHub. Meaning I copied the GitHub URL link and used these command’s,
+I cloned my ongoing codeanywhere repository that was deployed on GitHub. Meaning I copied the GitHub URL link and used these commands,
 ```
 cd ~/Desktop     -  redirect you to your desktop
 cd ciprojects     - redirect you to your folder with the projects
@@ -215,7 +226,7 @@ How to make a local clone of this project.
 
 ## Future improvements
 
-* I did not write my commit messengers correctly in the beggining of the project. However, I fixed my errors when I realized my wrongs. In the future I will improve the overall quality.
+* I did not write my commit messengers correctly at the beggining of the project. However, I fixed my errors when I realized my wrongs. In the future, I will improve the overall quality.
 
 ---
 
