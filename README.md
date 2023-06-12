@@ -1,11 +1,11 @@
-Cheers Quiz
+# Cheers Quiz
 
-![Logo](documentation/logo-zen-zone.png)
+![Logo](documentation/logo.png)
 
 ## About
-Cheers Quiz is a website that allows users to learn or polish their language skills. This quiz will be targeted to anyone who wants to be able to have a toast with 10 different nationalities by saying "Cheers".
+Cheers Quiz is a website that allows users to learn or polish their language skills. This quiz is for anyone who wants to be able to have a toast on 10 different languages by saying "Cheers".
 
-The site can be accessed by this [link](https://bianca9901.github.io/spanish-quiz/)
+The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
 
 ![Different screens](documentation/different-screen-devices.png)
 
