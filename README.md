@@ -1,6 +1,6 @@
 # Cheers Quiz
 
-![Logo](documentation/logo.png)
+![Logo](assets/images/logo.png)
 
 ## About
 Cheers Quiz is a website that allows users to learn or polish their language skills. This quiz is for anyone who wants to be able to have a toast in 10 different languages by saying "Cheers".
@@ -15,9 +15,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ### **First-Time Visitor Goals:**
 
-* As a first-time visitor my goal is to find out what this website is about so that I can learn more.
-
-* As a first-time visitor my goal is to know what my current score is so that I know my level. Therefore I take this quiz.
+* As a first-time visitor my goal is to do the quiz so that I can test my current language knowledge.
 
 
 ### **Returning Visitor Goals:**
@@ -44,7 +42,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 ![Home page](documentation/landing-page.png)
 
 #### The Logo
-![Logo](documentation/logo.png)
+![Logo](assets/images/logo.png)
 
 #### The Quiz
 1. The quiz section displays a button with the text ‘’start’’ that when pressed will display the first question.
@@ -59,11 +57,11 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 6. The score will display the text "You can say cheers in x out of 10 languages!"
 
-![Class selection section](documentation/class-selection-section.png)
+![Quiz](assets/images/quiz.png)
 
 
 #### The Footer
-Has social media icons that when pressed will open up in a new tab.![Footer](documentation/footer.png)
+Has social media icons that when pressed will open up in a new tab.![Footer](assets/images/footer.png)
 
 ---
 
@@ -104,31 +102,31 @@ was used to write the code.
 Black, White, Pink, Purple and Grey. 
 
 RGB (0,0,0)
-![Color Black](documentation/color-black.png)
+![Color Black](assets/images/color-black.png)
 
 RGB (255,255,255)
-![Color White](documentation/color-white.png)
+![Color White](assets/images/color-white.png)
 
 RGB (245,195,203)
-![Color Pink](documentation/color-pink.png)
+![Color Pink](assets/images/color-pink.png)
 
 RGB (167, 133, 209)
-![Color Purple](documentation/color-purple.png)
+![Color Purple](assets/images/color-purple.png)
 
 RGB (57, 55, 55)
-![Color grey](documentation/color-grey.png)
+![Color grey](assets/images/color-grey.png)
 
 
 ### Typography 
 
 I used [Google Fonts](https://fonts.google.com/) for all text. The name of the font is Bebas Neue Regular 400.
-![Bebas Neue](documentation/google-fonts.png)
+![Bebas Neue](assets/images/google-fonts.png)
 
 
 ### Wireframes
 
 #### I used [Balsamiq Wireframes](https://balsamiq.com/wireframes/) to make a mockup sketch of the layout before starting to code.
-![Wireframe](documentation/wireframe.png)
+![Wireframe](assets/images/wireframe.png)
 
 ---
 

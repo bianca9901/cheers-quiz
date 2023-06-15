@@ -1,44 +1,47 @@
 // Get elements from html
-const startButton = document.getElementById('start-button')
-const nextButton = document.getElementById('next-button')
-const quizBoxElement = document.getElementById('quiz-box')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
+const startButton = document.getElementById('start-button');
+const nextButton = document.getElementById('next-button');
+const quizBoxElement = document.getElementById('quiz-box');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
 
 // Store score for user
-let currentQuestionIndex = 0
-let score = 0
+let answerButtons
+let rearrangeQuestions;
+let numberOfQuestion;
+let currentQuestionIndex = 0;
+let score = 0;
 
 // Listen for mouse clicks from user
-startButton.addEventListener('click', startQuiz)
+startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
-})
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 
 // Start the quiz, hide the start button
 // Show the question box
 // Show the next button
 function startQuiz() {
-    startButton.classList.add('hide')
-    nextButton.classList.remove('hide')
-    rearrangeQuestions = questions.sort(() => Math.random - .5)
-    currentQuestionIndex = 0
-    score = 0
-    quizBoxElement.classList.remove('hide')
-    setNextQuestion()
+    startButton.classList.add('hide');
+    nextButton.classList.remove('hide');
+    rearrangeQuestions = questions.sort(() => Math.random - .5);
+    currentQuestionIndex = 0;
+    score = 0;
+    quizBoxElement.classList.remove('hide');
+    setNextQuestion();
 }
 
-// Resets previous questions and present new ones
+// Resets previous questions and presents new ones
 function setNextQuestion() {
-    resetState()
-    nextButton.classList.remove('hide')
-    numberOfQuestion = currentQuestionIndex + 1
+    resetState();
+    nextButton.classList.remove('hide');
+    numberOfQuestion = currentQuestionIndex + 1;
     if (rearrangeQuestions.length >= numberOfQuestion) {
-        showQuestion(rearrangeQuestions[currentQuestionIndex])
+        showQuestion(rearrangeQuestions[currentQuestionIndex]);
     } else {
-     //  Stop the quiz
-    nextButton.classList.add('hide')
+//  Stop the quiz
+    nextButton.classList.add('hide');
     questionElement.innerText =  `You can say cheers in ${score}
     out of ${questions.length} languages!`;
     
@@ -46,14 +49,14 @@ function setNextQuestion() {
 }
 
 function resetState() {
-    clearStatusClass(document.body)
-    nextButton.classList.add('hide')
+    clearStatusClass(document.body);
+    nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 
-//Store selected buttons
+//Stores selected buttons 
 function selectAnswer(e){
     const selectedButton = e.target;
     const isCorrect = selectedButton.dataset.correct === "true";
@@ -71,51 +74,53 @@ function selectAnswer(e){
 }
 
 //Show restart button
+//Change color of div depending on correct and incorrect
 //tar man bort denna array så fungerar inte scores. men färgerna försvinner.
 function selectAnswer(e) {
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
     //Array.from(answerButtonsElement.children).forEach(button => {
         //setStatusClass(button.correct)
     //})
     if (rearrangeQuestions.lenght > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide')
+        nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+        startButton.innerText = 'Restart';
+        startButton.classList.remove('hide');
     }
 }
 
 //Add score when user guess the correct answer
+//Add class name to style in css
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add('correct')
-        score++
+        element.classList.add('correct');
+        score++;
     } else {
-        element.classList.add('wrong')
+        element.classList.add('wrong');
     }
 }
 
 //SUPPOSED to change colors depending on correct and incorrect
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answer.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('button')
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('button');
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer)
-        answerButtonsElement.appendChild(button)
-    })
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 
 function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 // Quiz questions and answers
@@ -148,7 +153,7 @@ question: 'Cheers in Afrikaans',
         { text: 'Prost',correct: false }
     ]
 }
-]
+];
 
 /*Add after fix quiz bug
 question: 'Cheers in German',
