@@ -26,29 +26,25 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 * As a returning visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.
 
-* As a returning visitor my goal is to contact the quiz authors so that I can ask further questions or suggest an improvement.
 
 ### **Frequent Visitor Goals:**
 
 * As a frequent visitor my goal is to get a full score so that I know that I memorized all the phrases.
 
+* As a returning visitor my goal is to contact the quiz authors on social media so that I can ask further questions or suggest an improvement.
+
 
 ## Existing features
 
 ### Home page consists of
-* The Logo,
-* A description of the quiz.
-* The Quiz
-* The Footer
+* A Logo
+* A Quiz
+* A Footer
 
 ![Home page](documentation/landing-page.png)
 
 ### The Logo
-Bild
-
-### A description of the Quiz
-Bild
-
+![Logo](documentation/logo.png)
 
 #### The Quiz
 1. The quiz section displays a button with the text ‘’start’’ that when pressed will display the first question.
@@ -67,13 +63,13 @@ Bild
 
 
 #### The Footer
-Has social media icons that when pressed will open up in a new tab. It also has a general email for the quiz authors.![Footer](documentation/the-footer.png)
+Has social media icons that when pressed will open up in a new tab.![Footer](documentation/footer.png)
 
 ---
 
 ## Features Left to Implement
 
-* Make the answers get shuffled if the user wants to restart the game
+* Shuffle the questions and answers if the user wants to restart the game.
 
 * A favicon
 
@@ -97,7 +93,7 @@ was used to host the code on the website.
 was used for version control.
 * [Visual studio code](https://code.visualstudio.com/)
 was used to write the code.
-* [JavaScript] (https://developer.mozilla.org/en-US/docs/Web/JavaScript) was used to make the quiz.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) was used to make the quiz.
 
 ---
 

@@ -1,24 +1,24 @@
-//Get elements from html
+// Get elements from html
 const startButton = document.getElementById('start-button')
 const nextButton = document.getElementById('next-button')
 const quizBoxElement = document.getElementById('quiz-box')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
-//Store score for user
+// Store score for user
 let currentQuestionIndex = 0
 let score = 0
 
-//Listen for mouse clicks from user
+// Listen for mouse clicks from user
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
 
-// start the quiz, hide the start button
-// show the question box
- //  show the next button
+// Start the quiz, hide the start button
+// Show the question box
+// Show the next button
 function startQuiz() {
     startButton.classList.add('hide')
     nextButton.classList.remove('hide')
@@ -29,7 +29,7 @@ function startQuiz() {
     setNextQuestion()
 }
 
-//Resets previous questions and present new ones
+// Resets previous questions and present new ones
 function setNextQuestion() {
     resetState()
     nextButton.classList.remove('hide')
@@ -37,7 +37,7 @@ function setNextQuestion() {
     if (rearrangeQuestions.length >= numberOfQuestion) {
         showQuestion(rearrangeQuestions[currentQuestionIndex])
     } else {
-     //  stop the quiz
+     //  Stop the quiz
     nextButton.classList.add('hide')
     questionElement.innerText =  `You can say cheers in ${score}
     out of ${questions.length} languages!`;
