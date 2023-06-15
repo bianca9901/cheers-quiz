@@ -1,12 +1,12 @@
-// Get elements from html
+// Declare constants for DOM elements
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const quizBoxElement = document.getElementById('quiz-box');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
-// Store score for user
-let answerButtons
+// Define variables
+let answerButtons;
 let rearrangeQuestions;
 let numberOfQuestion;
 let currentQuestionIndex = 0;
