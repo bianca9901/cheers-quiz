@@ -3,7 +3,7 @@
 ![Logo](documentation/logo.png)
 
 ## About
-Cheers Quiz is a website that allows users to learn or polish their language skills. This quiz is for anyone who wants to be able to have a toast on 10 different languages by saying "Cheers".
+Cheers Quiz is a website that allows users to learn or polish their language skills. This quiz is for anyone who wants to be able to have a toast in 10 different languages by saying "Cheers".
 
 The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
 
@@ -61,7 +61,7 @@ Bild
 
 5. If the visitor finishes all questions, their score will be displayed. The visitor gets 1 point for every correct answer with a maximum score of 10.
 
-6. The score will display the text "You can say cheers in x/10 languages!"
+6. The score will display the text "You can say cheers in x out of 10 languages!"
 
 ![Class selection section](documentation/class-selection-section.png)
 
@@ -107,10 +107,19 @@ was used to write the code.
 
 Black, White, Pink, Purple and Grey. 
 
+RGB (0,0,0)
 ![Color Black](documentation/color-black.png)
+
+RGB (255,255,255)
 ![Color White](documentation/color-white.png)
+
+RGB (245,195,203)
 ![Color Pink](documentation/color-pink.png)
+
+RGB (167, 133, 209)
 ![Color Purple](documentation/color-purple.png)
+
+RGB (57, 55, 55)
 ![Color grey](documentation/color-grey.png)
 
 
@@ -161,9 +170,16 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 ---
 
 ### Manual testing
+| Test | Expected Result |
+| --- | --- |
+| Open quiz in web browser | The quiz should load without any errors and display logo and start-button|
+| Click on the start button to begin the quiz | The quiz should start |
+| Answer the questions by selecting the correct option | The selected option should be highlighted and the quiz-box should become red if the answer was incorrect and green if answer was correct|
+| After answering all the questions | The quiz score should be displayed |
+| Check if the score displayed is accurate and matches the number of correct answers given | The score should be accurate and match the number of correct answers given |
 
 ## Bugs
-
+I had a bug with the answer buttons that I wanted to disable after the user has clicked their answer.
 ### Solved bugs
 
 
@@ -187,7 +203,7 @@ From the source section drop-down menu, select the Main Branch
 ## Local deployment
 How to make a local clone of this project.
 
-1. Copy this url https://github.com/bianca9901/zen-zone.git
+1. Copy this url https://github.com/bianca9901/cheers-quiz.git
 2. Open terminal.
 3. Type ```git clone``` and paste the url.
 4. Press enter to create your local clone.
