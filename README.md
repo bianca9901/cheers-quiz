@@ -22,9 +22,9 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ### **Returning Visitor Goals:**
 
-* As a returning visitor my goal is to repeat the phrases so that I can see if I can get a better score
+* As a returning visitor my goal is to repeat the phrases so that I can see if I can get a better score.
 
-* As a returning visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.
+* As a frequent visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.
 
 
 ### **Frequent Visitor Goals:**
@@ -43,7 +43,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ![Home page](documentation/landing-page.png)
 
-### The Logo
+#### The Logo
 ![Logo](documentation/logo.png)
 
 #### The Quiz
@@ -69,7 +69,7 @@ Has social media icons that when pressed will open up in a new tab.![Footer](doc
 
 ## Features Left to Implement
 
-* Shuffle the questions and answers if the user wants to restart the game.
+* Shuffle questions and answers if the user wants to restart the game.
 
 * A favicon
 
@@ -83,8 +83,8 @@ Has social media icons that when pressed will open up in a new tab.![Footer](doc
 was used for structuring the website.
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 was used to style the website.
-[Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) was used to get the layout and to get the site responsive on different devices.
-[Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) was used to get the layout and to get the site responsive on different devices.
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) was used to get the layout and to get the site responsive on different devices.
+* [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) was used to get the layout and to get the site responsive on different devices.
 * [Balsamiq](https://balsamiq.com/)
 was used to make the wireframe.
 * [Github](https://github.com/)
@@ -175,7 +175,7 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 | Check if the score displayed is accurate and matches the number of correct answers given | The score should be accurate and match the number of correct answers given |
 
 ## Bugs
-I had a bug with the answer buttons that I wanted to disable after the user has clicked their answer.
+I had a bug with the answer buttons that I wanted to disable after selecting an answer.
 ### Solved bugs
 
 
@@ -217,6 +217,6 @@ The icons in the footer and logo were taken from [Font Awesome](https://fontawes
 
 To make the code for the box-shadow I used [Css Matic](https://www.cssmatic.com/box-shadow)
 
-I used [Digital Colour Meter](https://support.apple.com/sv-se/guide/digital-color-meter/welcome/mac) for the screenshot of the colors in my website that I demonstrated in this README.md 
+I used [Digital Color Meter](https://support.apple.com/sv-se/guide/digital-color-meter/welcome/mac) for the screenshot of the colors in my website that I demonstrated in this README.md 
 
 ---
