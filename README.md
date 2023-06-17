@@ -3,7 +3,7 @@
 ![Logo](assets/documentation/images/logo.png)
 
 ## About
-Cheers Quiz is a website that allows users to learn or polish their language skills. This quiz is for anyone who wants to be able to have a toast in 10 different languages by saying "Cheers".
+Cheers Quiz is a dynamic website that allows you to learn or polish your language skills. This quiz is for anyone who wants to be able raise a toast in 10 different languages by saying "Cheers".
 
 The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
 
@@ -210,7 +210,7 @@ How to make a local clone of this project.
 
  [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) on Youtube has a JavaScript quiz tutorial that was great for inspiration and planning the structure of this quiz. 
 
-[Disable a Button]('https://www.scaler.com/topics/javascript-disable-button/') this article assisted me in learning how to disable buttons.
+[Scaler](https://www.scaler.com/topics/javascript-disable-button/) has an article that assisted me in learning how to disable buttons.
 
 ### Content
 The icons in the footer and logo were taken from [Font Awesome](https://fontawesome.com/)
