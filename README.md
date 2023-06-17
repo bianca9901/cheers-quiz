@@ -1,13 +1,13 @@
 # Cheers Quiz
 
-![Logo](assets/documentation/images/logo.png)
+![Logo](documentation/images/logo.png)
 
 ## About
 Cheers Quiz is a dynamic website that allows you to learn or polish your language skills. This quiz is for anyone who wants to be able raise a toast in 10 different languages by saying "Cheers".
 
 The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
 
-![Different screens](assets/documentation/images/different-screens.png)
+![Different screens](documentation/images/different-screens.png)
 
 ---
 
@@ -41,10 +41,10 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 * A Quiz
 * A Footer
 
-![Home page](assets/documentation/images/landingpage.png)
+![Home page](documentation/images/landingpage.png)
 
 #### The Logo
-![Logo](assets/documentation/images/logo.png)
+![Logo](documentation/images/logo.png)
 
 #### The Quiz
 1. The quiz section begins with a "Start" button. Upon clicking it, the first question and following 4 answer alternatives is displayed out of which only one is correct.
@@ -59,11 +59,11 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 6. At this point, the "Next" button is hidden, and a restart button appears beneath the score text for the user to restart the quiz
  
-![Quiz](assets/documentation/images/thequiz.png)
-![QuizScore](assets/documentation/images/score-quiz.png)
+![Quiz](documentation/images/thequiz.png)
+![QuizScore](documentation/images/score-quiz.png)
 
 #### The Footer
-Has social media icons that when pressed will open up in a new tab.![Footer](assets/documentation/images/thefooter.png)
+Has social media icons that when pressed will open up in a new tab.![Footer](documentation/images/thefooter.png)
 
 ---
 
@@ -105,21 +105,23 @@ The main colors used for the design was,
 Black, White, Pink and Purple. 
 
 RGB (0,0,0)
-![Color Black](assets/documentation/images/color-black.png)
+![Color Black](documentation/images/color-black.png)
 
 RGB (255,255,255)
-![Color White](assets/documentation/images/color-white.png)
+![Color White](documentation/images/color-white.png)
 
 RGB (245,195,203)
-![Color Pink](assets/documentation/images/color-pink.png)
+![Color Pink](documentation/images/color-pink.png)
 
 RGB (167, 133, 209)
-![Color Purple](assets/documentation/images/color-purple.png)
+![Color Purple](documentation/images/color-purple.png)
 
 * Color used for hovering over buttons was:
 rgb(202, 167, 235).
 * Color used for hovering over social-media icons was:
 rgb(202, 167, 235)
+* Color used for next button was: 
+rgba(218, 162, 235, 0.875);
 * Color used if user clicks the correct answer button was:
 HEX #a6e775;
 * Color used if user clicks incorrect answer button was:
@@ -128,12 +130,12 @@ HEX #ff7f7f;
 ### Typography 
 
 I used [Google Fonts](https://fonts.google.com/) for all text. The name of the font is Bebas Neue Regular 400.
-![Bebas Neue](assets/documentation/images/google-fonts.png)
+![Bebas Neue](documentation/images/google-fonts.png)
 
 ### Wireframes
 
 #### I used [Balsamiq Wireframes](https://balsamiq.com/wireframes/) to make a mockup sketch of the layout before starting to code.
-![Wireframe](assets/documentation/images/wireframe.png)
+![Wireframe](documentation/images/wireframe.png)
 
 ---
 
@@ -144,17 +146,17 @@ I used [Google Fonts](https://fonts.google.com/) for all text. The name of the f
 #### No errors were returned when passing through the official [W3C validator](https://validator.w3.org/) for the html. No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator.html.en) validator for CSS. No errors were found when passing through the official [Jshint](https://jshint.com/) validator.
 
 #### HTML
-![Home page Html checker](assets/documentation/images/html-checker.png)
+![Home page Html checker](documentation/images/html-checker.png)
 
 
 #### CSS
-![Css error checker](assets/documentation/images/css-checker.png)
+![Css error checker](documentation/images/css-checker.png)
 
 
 ## Accessibility and performance scores
 I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to get approval that the site is performing well and that it is accessible.
 
-![Home page](assets/documentation/images/lighthouse-checker.png)
+![Home page](documentation/images/lighthouse-checker.png)
 
 ---
 
