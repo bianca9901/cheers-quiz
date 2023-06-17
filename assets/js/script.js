@@ -1,207 +1,171 @@
-// Declare constants for DOM elements
-const startButton = document.getElementById('start-button');
-const nextButton = document.getElementById('next-button');
-const quizBoxElement = document.getElementById('quiz-box');
-const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons');
+// DOM elements
+const quizBoxEl = document.getElementById("quiz-box");
+const scoreEl = document.getElementById("score");
+const questionEl = document.getElementById("question");
+const answerButtonsEl = document.getElementById("answer-buttons");
+const startButtonEl = document.getElementById("start-button");
+const nextButtonEl = document.getElementById("next-button");
 
-// Define variables
-let answerButtons;
-let rearrangeQuestions;
-let numberOfQuestion;
+// Quiz variables
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Listen for mouse clicks from user
-startButton.addEventListener('click', startQuiz);
-nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-});
-
-// Start the quiz, hide the start button
-// Show the question box
-// Show the next button
-function startQuiz() {
-    startButton.classList.add('hide');
-    nextButton.classList.remove('hide');
-    rearrangeQuestions = questions.sort(() => Math.random - .5);
-    currentQuestionIndex = 0;
-    score = 0;
-    quizBoxElement.classList.remove('hide');
-    setNextQuestion();
-}
-
-// Resets previous questions and presents new ones
-function setNextQuestion() {
-    resetState();
-    nextButton.classList.remove('hide');
-    numberOfQuestion = currentQuestionIndex + 1;
-    if (rearrangeQuestions.length >= numberOfQuestion) {
-        showQuestion(rearrangeQuestions[currentQuestionIndex]);
-    } else {
-//  Stop the quiz
-    nextButton.classList.add('hide');
-    questionElement.innerText =  `You can say cheers in ${score}
-    out of ${questions.length} languages!`;
-    
-    }
-}
-
-function resetState() {
-    clearStatusClass(document.body);
-    nextButton.classList.add('hide');
-    while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }
-}
-
-//Stores selected buttons 
-function selectAnswer(e){
-    const selectedButton = e.target;
-    const isCorrect = selectedButton.dataset.correct === "true";
-    if(isCorrect){
-        selectedButton.classList.add('correct');
-    }else{
-        selectedButton.classList.add('incorrect');
-    }
-    Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === 'true'){
-            button.classList.add('correct');
-        }
-        button.disabled = true;
-    });
-}
-
-//Show restart button
-//Change color of div depending on correct and incorrect
-//tar man bort denna array så fungerar inte scores. men färgerna försvinner.
-function selectAnswer(e) {
-    const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct;
-    setStatusClass(document.body, correct);
-    //Array.from(answerButtonsElement.children).forEach(button => {
-        //setStatusClass(button.correct)
-    //})
-    if (rearrangeQuestions.lenght > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide');
-    } else {
-        startButton.innerText = 'Restart';
-        startButton.classList.remove('hide');
-    }
-}
-
-//Add score when user guess the correct answer
-//Add class name to style in css
-function setStatusClass(element, correct) {
-    clearStatusClass(element);
-    if (correct) {
-        element.classList.add('correct');
-        score++;
-    } else {
-        element.classList.add('wrong');
-    }
-}
-
-//SUPPOSED to change colors depending on correct and incorrect
-function showQuestion(question) {
-    questionElement.innerText = question.question;
-    question.answer.forEach(answer => {
-        const button = document.createElement('button');
-        button.innerText = answer.text;
-        button.classList.add('button');
-        if (answer.correct) {
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener('click', selectAnswer);
-        answerButtonsElement.appendChild(button);
-    });
-}
-
-function clearStatusClass(element) {
-    element.classList.remove('correct');
-    element.classList.remove('wrong');
-}
-
-// Quiz questions and answers
-const questions = [{
-question: 'Cheers in Spanish',
-    answer: [ 
-        { text: 'Skål', correct: false },
-        { text: 'Cheers', correct: false },
-        { text: 'Salud', correct: true },
-        { text: 'Prost', correct: false },
-    ]
-},
-
-{
-question: 'Cheers in French',
-    answer: [
-        { text: 'Sláinte', correct: false },
-        { text: 'Şerefe', correct: false },
-        { text: 'Kanpai', correct: false },
-        { text: 'Santé', correct: true },
-    ]
-},
-
-{
-question: 'Cheers in Afrikaans',
-    answer: [
-        { text: 'Gesondheid', correct: true },
-        { text: 'Yamas', correct: false },
-        { text: 'Gānbēi',correct: false },
-        { text: 'Prost',correct: false }
-    ]
-}
+/* Questions and answers for quiz in an array. The index
+is the correct answer */
+const questions = [
+  {
+    question: "Cheers in Spanish",
+    answers: ["Skål", "Cheers", "Salud", "Prost"],
+    correctAnswerIndex: 2
+  },
+  {
+    question: "Cheers in French",
+    answers: ["Sláinte", "Şerefe", "Kanpai", "Santé"],
+    correctAnswerIndex: 3
+  },
+  {
+    question: "Cheers in Afrikaans",
+    answers: ["Gesondheid", "Yamas", "Gānbēi", "Prost"],
+    correctAnswerIndex: 0
+  },
+  {
+    question: "Cheers in German",
+    answers: ["Prost", "Skål", "Gānbēi", "Geonbae"],
+    correctAnswerIndex: 0
+  },
+  {
+    question: "Cheers in Swedish",
+    answers: ["Santé", "Yamas", "Skål", "Serefe"],
+    correctAnswerIndex: 2
+  },
+  {
+    question: "Cheers in Italian",
+    answers: ["Geonbae", "Skål", "Gānbēi", "Cin Cin"],
+    correctAnswerIndex: 3
+  },
+  {
+    question: "Cheers in Japanese",
+    answers: ["Kanpai", "Gānbēi", "Gom bui", "Geonbae"],
+    correctAnswerIndex: 0
+  },
+  {
+    question: "Cheers in Chinese (Cantonese)",
+    answers: ["Gom bui", "Kanpai", "Gānbēi", "Geonbae"],
+    correctAnswerIndex: 0
+  },
+  {
+    question: "Cheers in Serbian",
+    answers: ["Gom bui", "Kanpai", "Gānbēi", "Ziveli"],
+    correctAnswerIndex: 3
+  },
+  {
+    question: "Cheers in Albanian",
+    answers: ["Skål", "Gëzuar", "Gānbēi", "Prost"],
+    correctAnswerIndex: 1
+  },
 ];
 
-/*Add after fix quiz bug
-question: 'Cheers in German',
-    answer: [
-        { text: 'Skål', correct: false},
-        { text: 'Geonbae', correct: false },
-        { text: 'Salud', correct: false },
-        { text: 'Prost, correct: true }
+/* Function starts the quiz.
+Makes the user start with a score pot of 0 everytime
+the quiz starts. Start button gets hidden and instead,
+it now displays the quiz box that from the beggining
+was hidden from html & css settings. */
+function startQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+  scoreEl.textContent = `Score: ${score}`;
+  showQuestion();
+  quizBoxEl.classList.remove("hide");
+  startButtonEl.classList.add("hide");
+  answerListeners();
+  nextButtonEl.addEventListener("click", nextQuestion);
+}
 
-question: Cheers in Swedish,
-        answer: [
-        { text: 'Skål', correct: true },
-        { text: 'Santé', correct: false },
-        { text: 'Ziveli', correct: false },
-        { text: 'Prost', correct: false }
+/* Function displays the current question.
+It also updates questions and answers. */
+function showQuestion() {
+  const question = questions[currentQuestionIndex];
+  questionEl.textContent = question.question;
+  for (let i = 0; i < answerButtonsEl.children.length; i++) {
+    const answerButton = answerButtonsEl.children[i];
+    answerButton.textContent = question.answers[i];
+    answerButton.classList.remove("correct", "incorrect");
+    answerButton.disabled = false;
+  }
+}
 
-question: Cheers in Italian,
-        answer: [
-        { text: 'Skål', correct: false },
-        { text: 'Cheers', correct: false },
-        { text: 'Geonbae', correct: false },
-        { text: 'Cin Cin', correct: true }
+// Function listens for clicks on answer buttons
+function answerListeners() {
+  for (let i = 0; i < answerButtonsEl.children.length; i++) {
+    const answerButton = answerButtonsEl.children[i];
+    answerButton.addEventListener("click", () => {
+      checkAnswer(i);
+    });
+  }
+}
 
-question: Cheers in Japanese,
-        answer: [
-        { text: 'Kanpai', correct: true },
-        { text: 'Gānbēi', correct: false },
-        { text: 'Gom bui', correct: false },
-        { text: 'Prost', correct: false }
-
-question: Cheers in Chinese (Cantonese),
-        answer: [
-        { text: 'Kanpai', correct: false },
-        { text: 'Gānbēi', correct: false },
-        { text: 'Gom bui', correct: true },
-        { text: 'Prost', correct: false }
-
-question: Cheers in Serbian,
-        answer: [
-        { text: 'Ziveli', correct: true },
-        { text: 'Gānbēi', correct: false },
-        { text: 'Gom bui', correct: false },
-        { text: 'Prost', correct: false }
-
-question: Cheers in Albanian,
-        answer: [
-        { text: 'Kanpai', correct: false },
-        { text: 'Gëzuar', correct: true },
-        { text: 'Gom bui', correct: false },
-        { text: 'Prost', correct: false }
+/* Function checks the selected answer
+and gives one score if button selected is
+correct. It also calls the function "disable answer
+buttons, whose job is to Disable all buttons except from
+next, so that the user can't change their answer.
 */
+function checkAnswer(answerIndex) {
+  const question = questions[currentQuestionIndex];
+  const isCorrect = question.correctAnswerIndex === answerIndex;
+
+  if (isCorrect) {
+    score++;
+    scoreEl.textContent = `Score: ${score}`;
+    answerButtonsEl.children[answerIndex].classList.add("correct");
+  } else {
+    answerButtonsEl.children[answerIndex].classList.add("incorrect");
+  }
+
+  disableAnswerButtons();
+  showNextButton();
+}
+
+// Function to disable answer buttons after selection
+function disableAnswerButtons() {
+  const answerButtons = answerButtonsEl.children;
+  for (let i = 0; i < answerButtons.length; i++) {
+    answerButtons[i].disabled = true;
+  }
+}
+
+/* Function to show the next question by adding
+the next-button */
+function showNextButton() {
+  nextButtonEl.classList.remove("hide");
+}
+
+/* Function to go to the next question if there are
+any questions left, or else it will end the quiz */ 
+function nextQuestion() {
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    showQuestion();
+    nextButtonEl.classList.add("hide");
+  } else {
+    endQuiz();
+  }
+}
+
+/* Function ends the quiz by hiding the quizbox,
+and changing the start-buttons innertext to restart which
+takes the user to the first question again.
+It also displays a message that gives the final score.
+I also have given the restart/start button (same button)
+a classname that I styled in css. */
+function endQuiz() {
+  quizBoxEl.classList.add("hide");
+  startButtonEl.classList.remove("hide");
+  startButtonEl.textContent = "Restart";
+  scoreEl.textContent = `You can say cheers in: ${score} out
+  of ${questions.length} languages`;
+  startButtonEl.classList.add("button-container");
+}
+
+// Event listener for the start button
+startButtonEl.addEventListener("click", startQuiz);

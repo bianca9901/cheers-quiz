@@ -1,6 +1,6 @@
 # Cheers Quiz
 
-![Logo](assets/images/logo.png)
+![Logo](documentation/images/logo.png)
 
 ## About
 Cheers Quiz is a website that allows users to learn or polish their language skills. This quiz is for anyone who wants to be able to have a toast in 10 different languages by saying "Cheers".
@@ -14,6 +14,8 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 ## User Stories
 
 ### **First-Time Visitor Goals:**
+
+* As a first-time visitor my goal is to explore the Cheers Quiz website and understand its purpose and features.
 
 * As a first-time visitor my goal is to do the quiz so that I can test my current language knowledge.
 
@@ -39,33 +41,33 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 * A Quiz
 * A Footer
 
-![Home page](documentation/landing-page.png)
+![Home page](documentation/images/landingpage.png)
 
 #### The Logo
-![Logo](assets/images/logo.png)
+![Logo](documentation/images/logo.png)
 
 #### The Quiz
-1. The quiz section displays a button with the text ‘’start’’ that when pressed will display the first question.
+1. The quiz section begins with a "Start" button. Upon clicking it, the first question and following 4 answer alternatives is displayed out of which only one is correct.
 
-2. When the first question is displayed, the start question gets removed and the user will be presented with question 1 with the following 4 alternative answers where only one is correct. 
+2. Once the user chooses an answer, the selected option is highlighted in green if correct or red if incorrect.
 
-3. When the user has chosen their answer a color of green will be displayed if it was guessed correctly, and a colour of red will be displayed if guessed wrong. 
+3. If the user selects the correct answer, the score updates by 1, displayed as "Score: 1" at the bottom of the quiz-box.
 
-4. The user then has the option to click the button ‘’next’’. If clicked, question number 2 and the following 4 alternatives will be displayed. This time the user will have two options, to select the ‘’next’’ button or the‘’restart’’ button. 
+4. The user can then proceed by clicking the "Next" button. This action reveals question number 2 and its corresponding four alternatives.
 
-5. If the visitor finishes all questions, their score will be displayed. The visitor gets 1 point for every correct answer with a maximum score of 10.
+5. Once the user completes all the questions, their score is shown as "You can say cheers in x out of 10 languages!"
 
-6. The score will display the text "You can say cheers in x out of 10 languages!"
-
-![Quiz](assets/images/quiz.png)
-
+6. At this point, the "Next" button is hidden, and a restart button appears beneath the score text for the user to replay the quiz
+ 
+![Quiz](documentation/images/thequiz.png)
+![QuizScore](documentation/images/score-quiz.png)
 
 #### The Footer
-Has social media icons that when pressed will open up in a new tab.![Footer](assets/images/footer.png)
+Has social media icons that when pressed will open up in a new tab.![Footer](documentation/images/thefooter.png)
 
 ---
 
-## Features Left to Implement
+## Features left to Implement
 
 * Shuffle questions and answers if the user wants to restart the game.
 
@@ -99,34 +101,39 @@ was used to write the code.
 
 ### Colors
 
-Black, White, Pink, Purple and Grey. 
+The main colors used for the design was,
+Black, White, Pink and Purple. 
 
 RGB (0,0,0)
-![Color Black](assets/images/color-black.png)
+![Color Black](documentation/images/color-black.png)
 
 RGB (255,255,255)
-![Color White](assets/images/color-white.png)
+![Color White](documentation/images/color-white.png)
 
 RGB (245,195,203)
-![Color Pink](assets/images/color-pink.png)
+![Color Pink](documentation/images/color-pink.png)
 
 RGB (167, 133, 209)
-![Color Purple](assets/images/color-purple.png)
+![Color Purple](documentation/images/color-purple.png)
 
-RGB (57, 55, 55)
-![Color grey](assets/images/color-grey.png)
-
+* Color used for hovering over buttons was:
+rgb(202, 167, 235).
+* Color used for hovering over social-media icons was:
+rgb(202, 167, 235)
+* Color used if user clicks the correct answer button was:
+HEX #a6e775;
+* Color used if user clicks incorrect answer button was:
+HEX #ff7f7f;
 
 ### Typography 
 
 I used [Google Fonts](https://fonts.google.com/) for all text. The name of the font is Bebas Neue Regular 400.
-![Bebas Neue](assets/images/google-fonts.png)
-
+![Bebas Neue](documentation/images/google-fonts.png)
 
 ### Wireframes
 
 #### I used [Balsamiq Wireframes](https://balsamiq.com/wireframes/) to make a mockup sketch of the layout before starting to code.
-![Wireframe](assets/images/wireframe.png)
+![Wireframe](documentation/images/wireframe.png)
 
 ---
 
@@ -164,23 +171,30 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 ---
 
 ### Manual testing
-| Test | Expected Result |
-| --- | --- |
-| Open quiz in web browser | The quiz should load without any errors and display logo and start-button|
-| Click on the start button to begin the quiz | The quiz should start |
-| Answer the questions by selecting the correct option | The selected option should be highlighted and the quiz-box should become red if the answer was incorrect and green if answer was correct|
-| After answering all the questions | The quiz score should be displayed |
-| Check if the score displayed is accurate and matches the number of correct answers given | The score should be accurate and match the number of correct answers given |
+| Test | Expected Result | Tested | Passed |
+| --- | --- | --- | --- |
+| Click on the start button to begin the quiz | The quiz should start and present the first question for the user to answer. | Yes | Yes |
+| Answer the questions by selecting a button | If the user selects the correct answer, the chosen button should become green if it is the correct response. If the user selects an incorrect answer, the chosen button should become red. | Yes | Yes |
+| Selects answers correctly | The score in the bottom of the page should be updated accordingly, displaying the total number of correct answers. | Yes | Yes |
+| After answering all the questions | The quiz score should be displayed, showcasing the user's total number of correct answers out of the total number of questions. | Yes | Yes |
+| The displayed score | Should be the number of correct answers provided by the user. | Yes | Yes |
+| The restart button | Should take the user to question 1 | Yes | Yes |
 
+
+---
 ## Bugs
-I had a bug with the answer buttons that I wanted to disable after selecting an answer.
-### Solved bugs
 
+### Solved Bug
+* There was an issue with the answer buttons in the quiz. When the user picked an answer, the buttons were not disabled. This meant that the user could change their answers even after selecting one, which could lead to inaccurate score results.
+
+* To fix this bug, I implemented a function that disables the answer buttons once the user has selected an answer.
+
+* The bug is now solved and the user can no longer change their answer after selecting. This makes the score accurate.
 
 ### Unsolved bugs
-
+None
 ### Mistakes
-
+* I initially made a mistake of naming the functions in less descriptive ways, which could have caused confusion for other readers trying to understand the code. Once I realized this, I corrected the function names to be more clear.
 
 --- 
 
@@ -209,6 +223,9 @@ How to make a local clone of this project.
 ---
 
 ## Credits
+### JavaScript Quiz Tutorial
+ [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) on Youtube has a JavaScript quiz tutorial that was great for inspiration and planning the structure of this quiz. 
+
 
 ### Content
 The icons in the footer and logo were taken from [Font Awesome](https://fontawesome.com/)

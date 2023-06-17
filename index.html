@@ -13,55 +13,62 @@
 </head>
 
 <body>
-    <!--Header section-->
+    <!-- Header section -->
     <header>
-        <a href="index.html" aria-label="go to home page">
+        <a href="index.html" aria-label="Go to home page">
             <h1>Cheers <i class="fa-solid fa-champagne-glasses"></i> Quiz</h1>
         </a>
     </header>
 
-    <!--About the quiz section-->
+    <!-- Quiz section -->
     <main>
-        <!--The Quiz-->
         <div class="container">
             <div id="quiz-box" class="hide">
-                <div id="question"> Question </div>
+                <h2 id="question"></h2>
                 <div id="answer-buttons" class="button-grid">
-                    <button class="button">1</button>
-                    <button class="button">2</button>
-                    <button class="button">3</button>
-                    <button class="button">4</button>
+                    <button class="button"></button>
+                    <button class="button"></button>
+                    <button class="button"></button>
+                    <button class="button"></button>
+                </div>
+                <div class="controls">
+                    <button id="next-button" class="button next-button hide">Next</button>
                 </div>
             </div>
-            <div class="controls">
-                <button id="start-button" class="start-button button">Start</button>
-                <button id="next-button" class="next-button button hide">Next</button>
+            <div id="score"></div>
+            <div class="button-container">
+                <button id="start-button" class="button start-button end quiz">Start Quiz</button>
             </div>
         </div>
     </main>
 
-    <!--Footer-->
+    <!-- Footer -->
     <footer>
         <ul class="socialmedia">
-            <li> <a href="https://facebook.com" target="_blank" rel="noopener"
-                    aria-label="Visit Our Facebook Page (opens in a new tab)"><i class="fa-brands fa-facebook"></i>
-                </a> </li>
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit Our instagram Page (opens in a new tab)"><i class="fa-brands fa-instagram"></i>
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit Our Facebook Page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit Our Instagram Page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
             </li>
             <li>
                 <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit Our Youtube channel (opens in a new tab)"><i class="fa-brands fa-youtube"></i>
+                    aria-label="Visit Our YouTube Channel (opens in a new tab)">
+                    <i class="fa-brands fa-youtube"></i>
                 </a>
             </li>
         </ul>
     </footer>
 
     <script src="assets/js/script.js"></script>
-    <!--Font Awesome icons-->
+    <!-- Font Awesome icons -->
     <script src="https://kit.fontawesome.com/c6099e5633.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
