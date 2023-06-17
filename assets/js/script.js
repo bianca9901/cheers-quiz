@@ -1,4 +1,5 @@
-// DOM elements
+/* jshint esversion:8 */
+// Declare constants for DOM elements
 const quizBoxEl = document.getElementById("quiz-box");
 const scoreEl = document.getElementById("score");
 const questionEl = document.getElementById("question");

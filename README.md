@@ -141,7 +141,7 @@ I used [Google Fonts](https://fonts.google.com/) for all text. The name of the f
 
 ### Validator testing
 
-#### No errors were returned when passing through the official [W3C validator](https://validator.w3.org/) for the html. No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator.html.en) validator for CSS.
+#### No errors were returned when passing through the official [W3C validator](https://validator.w3.org/) for the html. No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator.html.en) validator for CSS. No errors were found when passing through the official [Jshint](https://jshint.com/) validator.
 
 #### HTML
 ![Home page Html checker](documentation/images/html-checker.png)
@@ -149,6 +149,8 @@ I used [Google Fonts](https://fonts.google.com/) for all text. The name of the f
 
 #### CSS
 ![Css error checker](documentation/images/css-checker.png)
+
+#### Javascript
 
 ---
 
@@ -204,10 +206,6 @@ How to make a local clone of this project.
 2. Open terminal.
 3. Type ```git clone``` and paste the url.
 4. Press enter to create your local clone.
-
----
-
-## Future improvements
 
 ---
 
