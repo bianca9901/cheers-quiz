@@ -7,7 +7,7 @@ Cheers Quiz is a website that allows users to learn or polish their language ski
 
 The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
 
-![Different screens](documentation/different-screen-devices.png)
+![Different screens](documentation/images/different-screens.png)
 
 ---
 
