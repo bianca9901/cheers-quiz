@@ -117,15 +117,15 @@ RGB (167, 133, 209)
 ![Color Purple](documentation/images/color-purple.png)
 
 * Color used for hovering over buttons was:
-rgb(202, 167, 235).
+rgb(202, 167, 235)
 * Color used for hovering over social-media icons was:
 rgb(202, 167, 235)
 * Color used for next button was: 
-rgba(218, 162, 235, 0.875);
+rgba(218, 162, 235, 0.875)
 * Color used if user clicks the correct answer button was:
-HEX #a6e775;
+HEX #a6e775
 * Color used if user clicks incorrect answer button was:
-HEX #ff7f7f;
+HEX #ff7f7f
 
 ### Typography 
 
@@ -226,5 +226,6 @@ I used [Digital Color Meter](https://support.apple.com/sv-se/guide/digital-color
 
 ---
 ## Acknowledgments
+I had a limited timeframe to learn JavaScript as I am doing this course full-time. I had no prior experience in js and I wrote my first line of code 17 days ago. This project has pushed me to learn so many new skills within a short period of time. Therefore, I would like to take a moment to thank myself for my determination and dedication because it has not been easy but it has definitely been rewarding.
 
 Thank you [Iuliia Konovalova](https://github.com/IuliiaKonovalova), and my uncle Oscar for the guidance during this learning process of mine. Your expertise helped me overcome various challenges and teached me a lot during the way.
