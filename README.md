@@ -177,7 +177,7 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 ---
 ## Bugs
 
-### Solved Bug
+### Solved Bugs
 * There was an issue with the answer buttons in the quiz. When the user picked an answer, the buttons were not disabled. This meant that the user could change their answers even after selecting one, which could lead to inaccurate score results.
 
 * To fix this bug, I implemented a function that disables the answer buttons once the user has selected an answer.
