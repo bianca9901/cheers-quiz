@@ -1,4 +1,4 @@
-/* jshint esversion:8 */
+// jshint esversion:8
 // Declare constants for DOM elements
 const quizBoxEl = document.getElementById("quiz-box");
 const scoreEl = document.getElementById("score");
@@ -11,8 +11,10 @@ const nextButtonEl = document.getElementById("next-button");
 let currentQuestionIndex = 0;
 let score = 0;
 
-/* Questions and answers for quiz in an array. The index
-is the correct answer */
+/**
+ *  Questions and answers for quiz in an array.
+ *  The index is the correct answer
+ */
 const questions = [
   {
     question: "Cheers in Spanish",
@@ -66,11 +68,13 @@ const questions = [
   },
 ];
 
-/* Function starts the quiz.
-Makes the user start with a score pot of 0 everytime
-the quiz starts. Start button gets hidden and instead,
-it now displays the quiz box that from the beggining
-was hidden from html & css settings. */
+/**
+ * Function starts the quiz.
+ * Makes the user start with a score pot of 0 everytime 
+ * the quiz starts. Start button gets hidden and instead,
+ * it now displays the quiz box that from the beggining 
+ * was hidden from html & css settings.
+ */
 function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
@@ -81,9 +85,10 @@ function startQuiz() {
   answerListeners();
   nextButtonEl.addEventListener("click", nextQuestion);
 }
-
-/* Function displays the current question.
-It also updates questions and answers. */
+/**
+ * Function displays the current question.
+ * It also updated questions and answers
+ */
 function showQuestion() {
   const question = questions[currentQuestionIndex];
   questionEl.textContent = question.question;
@@ -105,12 +110,13 @@ function answerListeners() {
   }
 }
 
-/* Function checks the selected answer
-and gives one score if button selected is
-correct. It also calls the function "disable answer
-buttons, whose job is to Disable all buttons except from
-next, so that the user can't change their answer.
-*/
+/** 
+ * Function checks the selected answer and gives
+ * one score if button selected is correct. It also
+ *  calls the function "disable answer buttons, whose
+ *  job is to Disable all buttons except from next, 
+ *  so that the user can't change their answer.
+ */
 function checkAnswer(answerIndex) {
   const question = questions[currentQuestionIndex];
   const isCorrect = question.correctAnswerIndex === answerIndex;
@@ -135,14 +141,18 @@ function disableAnswerButtons() {
   }
 }
 
-/* Function to show the next question by adding
-the next-button */
+/** 
+ * Function to show the next question by adding
+ * the next-button
+ */
 function showNextButton() {
   nextButtonEl.classList.remove("hide");
 }
 
-/* Function to go to the next question if there are
-any questions left, or else it will end the quiz */ 
+/**
+ * Function to go to the next question if there are
+ * any questions left, or else it will end the quiz
+ */ 
 function nextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
@@ -153,12 +163,14 @@ function nextQuestion() {
   }
 }
 
-/* Function ends the quiz by hiding the quizbox,
-and changing the start-buttons innertext to restart which
-takes the user to the first question again.
-It also displays a message that gives the final score.
-I also have given the restart/start button (same button)
-a classname that I styled in css. */
+/**
+ * Function ends the quiz by hiding the quizbox,
+ * and changing the start-buttons innertext to restart
+ * which takes the user to the first question again.
+ * It also displays a message that gives the final score.
+ * I also have given the restart/start button (same button)
+ * a classname that I styled in css.
+ */
 function endQuiz() {
   quizBoxEl.classList.add("hide");
   startButtonEl.classList.remove("hide");

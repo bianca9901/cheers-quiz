@@ -152,6 +152,9 @@ I used [Google Fonts](https://fonts.google.com/) for all text. The name of the f
 #### CSS
 ![Css error checker](documentation/images/css-checker.png)
 
+#### Javascript
+![Javascript checker](documentation/images/js.png)
+No errors. Just one warning, this warning will be ignored for now since it has not yet been covered in the course.
 
 ## Accessibility and performance scores
 I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to get approval that the site is performing well and that it is accessible.
