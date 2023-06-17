@@ -144,29 +144,18 @@ I used [Google Fonts](https://fonts.google.com/) for all text. The name of the f
 #### No errors were returned when passing through the official [W3C validator](https://validator.w3.org/) for the html. No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator.html.en) validator for CSS.
 
 #### HTML
-* Homepage 
-![Home page Html checker](documentation/homepage-html-checker.png)
+![Home page Html checker](documentation/images/html-checker.png)
 
-* Contact-us page
-![Contact page Html checker](documentation/contact-html-checker.png)
-
-* Response page
-![Response Html checker](documentation/response-html-checker.png)
 
 #### CSS
-![Css error checker](documentation/css-checker.png)
+![Css error checker](documentation/images/css-checker.png)
 
 ---
 
 ## Accessibility and performance scores
 I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to get approval that the site is performing well and that it is accessible.
 
-* Home page
-![Home page](documentation/home-page.png)
-
-* Contact us page ![Contact-us page](documentation/contact-us-score-page.png)
-
-* Response page ![Respons page](documentation/response-page-scores.png)
+![Home page](documentation/images/lighthouse-checker.png)
 
 ---
 
