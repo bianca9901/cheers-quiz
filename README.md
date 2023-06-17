@@ -24,14 +24,14 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 * As a returning visitor my goal is to repeat the phrases so that I can see if I can get a better score.
 
-* As a frequent visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.
+* As a returning visitor my goal is to find the Cheers-Quiz’s social media so that I can follow and interact with them.
 
 
 ### **Frequent Visitor Goals:**
 
 * As a frequent visitor my goal is to get a full score so that I know that I memorized all the phrases.
 
-* As a returning visitor my goal is to contact the quiz authors on social media so that I can ask further questions or suggest an improvement.
+* As a frequent visitor my goal is to contact the quiz authors on social media so that I can ask further questions or suggest an improvement.
 
 
 ## Existing features
@@ -57,7 +57,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 5. Once the user completes all the questions, their score is shown as "You can say cheers in x out of 10 languages!"
 
-6. At this point, the "Next" button is hidden, and a restart button appears beneath the score text for the user to replay the quiz
+6. At this point, the "Next" button is hidden, and a restart button appears beneath the score text for the user to restart the quiz
  
 ![Quiz](documentation/images/thequiz.png)
 ![QuizScore](documentation/images/score-quiz.png)
@@ -150,9 +150,6 @@ I used [Google Fonts](https://fonts.google.com/) for all text. The name of the f
 #### CSS
 ![Css error checker](documentation/images/css-checker.png)
 
-#### Javascript
-
----
 
 ## Accessibility and performance scores
 I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to get approval that the site is performing well and that it is accessible.
@@ -185,7 +182,7 @@ I used [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to g
 ### Unsolved bugs
 None
 ### Mistakes
-* I initially made a mistake of naming the functions in less descriptive ways, which could have caused confusion for other readers trying to understand the code. Once I realized this, I corrected the function names to be more clear.
+* I initially made a mistake of naming the functions in less descriptive ways, which could have caused confusion for other readers trying to understand the code. Once I realized this, I corrected the function names to be even more clear.
 
 --- 
 
@@ -210,9 +207,10 @@ How to make a local clone of this project.
 ---
 
 ## Credits
-### JavaScript Quiz Tutorial
+
  [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) on Youtube has a JavaScript quiz tutorial that was great for inspiration and planning the structure of this quiz. 
 
+[Disable a Button]('https://www.scaler.com/topics/javascript-disable-button/') this article assisted me in learning how to disable buttons.
 
 ### Content
 The icons in the footer and logo were taken from [Font Awesome](https://fontawesome.com/)
@@ -222,3 +220,6 @@ To make the code for the box-shadow I used [Css Matic](https://www.cssmatic.com/
 I used [Digital Color Meter](https://support.apple.com/sv-se/guide/digital-color-meter/welcome/mac) for the screenshot of the colors in my website that I demonstrated in this README.md 
 
 ---
+## Acknowledgments
+
+Thank you [Iuliia Konovalova](https://github.com/IuliiaKonovalova), and my uncle Oscar for the guidance during this learning process of mine. Your expertise helped me overcome various challenges and teached me a lot during the way.
